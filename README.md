@@ -1,2 +1,4 @@
 # SeatLock
-Sistema de reserva de assentos que garante exclusão mútua sobre cada assento, mesmo em um ambiente com múltiplos servidores atendendo requisições simultâneas.
+Sistemas de venda de ingressos com assentos marcados enfrentam um problema clássico de concorrência: múltiplos usuários podem tentar reservar o mesmo assento ao mesmo tempo. Em uma arquitetura com múltiplos servidores atendendo requisições em paralelo, esse problema se agrava, pois duas requisições concorrentes para o mesmo assento podem ser processadas por servidores diferentes, sem que um saiba da existência do outro — resultando em overbooking (duas pessoas com o mesmo assento confirmado).
+
+Para organizadores de eventos e usuários que compram ingressos com assento marcado, o SeatLock é um sistema de reserva de assentos que garante exclusão mútua sobre cada assento, mesmo em um ambiente com múltiplos servidores atendendo requisições simultâneas. Diferente de uma implementação ingênua de reservas, o SeatLock aplica conceitos de sistemas distribuídos — balanceamento de carga, lock distribuído, replicação e detecção de falhas — para garantir que nenhum assento seja vendido duas vezes.

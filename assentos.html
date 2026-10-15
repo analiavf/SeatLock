@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeatLock | Seleção de assentos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="subbar">
+    <a class="btn btn-outline" href="eventos.html">← Voltar para eventos</a>
+    <strong>Tech Summit 2026 — Seleção de Assentos</strong>
+  </header>
+
+  <div class="server-strip">
+    <span>Sua requisição foi roteada pelo balanceador para:</span>
+    <span class="server-pill">Servidor A</span><span class="server-pill selected">Servidor B</span><span class="server-pill">Servidor C</span>
+    <span class="lock-status">🔒 Lock distribuído ativo em: C3, C4</span>
+  </div>
+
+  <main class="seat-layout">
+    <section class="seat-area">
+      <div class="stage">PALCO</div>
+      <!-- Mapa ilustrativo. Botões não reservam assentos sem lógica de servidor. -->
+      <div class="seat-map" aria-label="Mapa de assentos">
+        <div class="seat-row"><span>A</span><button class="seat" aria-label="A1"></button><button class="seat" aria-label="A2"></button><button class="seat occupied" disabled aria-label="A3 ocupado">×</button><button class="seat occupied" disabled aria-label="A4 ocupado">×</button><button class="seat" aria-label="A5"></button><button class="seat" aria-label="A6"></button><button class="seat" aria-label="A7"></button><button class="seat" aria-label="A8"></button><button class="seat" aria-label="A9"></button><button class="seat" aria-label="A10"></button></div>
+        <div class="seat-row"><span>B</span><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat occupied" disabled>×</button><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button></div>
+        <div class="seat-row"><span>C</span><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat chosen">C3</button><button class="seat chosen">C4</button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button></div>
+        <div class="seat-row"><span>D</span><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat"></button><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat"></button></div>
+        <div class="seat-row"><span>E</span><button class="seat"></button><button class="seat occupied" disabled>×</button><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat"></button><button class="seat"></button><button class="seat occupied" disabled>×</button><button class="seat"></button><button class="seat"></button><button class="seat"></button></div>
+      </div>
+      <div class="legend"><span><i class="dot"></i> Disponível</span><span><i class="dot used"></i> Ocupado</span><span><i class="dot chosen-dot"></i> Selecionado</span></div>
+    </section>
+
+    <aside class="summary-card">
+      <h2>Resumo da reserva</h2>
+      <div class="lock-box">◷ Lock distribuído expira em 04:58 min</div>
+      <div class="summary-line"><span>Assentos</span><strong>C3, C4</strong></div>
+      <div class="summary-line"><span>Quantidade</span><strong>2</strong></div>
+      <h3 class="total">Total: R$ 160,00</h3>
+      <a class="btn btn-primary" href="confirmacao.html">Prosseguir para reserva</a>
+      <p class="muted small">Demonstração visual. A seleção e o bloqueio real precisam ser controlados pelo backend.</p>
+    </aside>
+  </main>
+</body>
+</html>

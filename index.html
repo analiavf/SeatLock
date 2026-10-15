@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>SeatLock Login</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login SeatLock</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <main class="container">
-        <form>
-            <h1>SeatLock</h1>
-            <div class="input-box">
-                <input placeholder="Usuário" type="email">
-                <i class="bx bxs-user"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Senha" type="password">
-                <i class="bx bxs-lock-alt"></i>
-            </div>
 
-            <div class="remember-forgot">
-                <label>
-                <input type="checkbox">
-                Lembrar senha
-                </label>
-                <a href="#">Esqueci minha senha</a>
-            </div>
+<body class="auth-page">
+  <!-- Tela de autenticação: os campos ainda não enviam dados ao servidor. -->
+  <main class="container">
+    <main class="auth-card">
+      <a class="brand" href="index.html"><span class="brand-icon"> <img src="img/seatlock-logo-icon.svg" alt=""></span>
+        SeatLock</a>
 
-            <button type="submit" class="login">Login</button>
+      <!-- Abas ilustrativas; os links levam às páginas correspondentes. -->
+      <nav class="auth-tabs" aria-label="Acesso">
+        <a class="active" href="index.html">Entrar</a>
+        <a href="cadastro.html">Cadastrar-se</a>
+      </nav>
 
-            <div class="register-link">
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-            </div>
-        </form>
+      <form action="#" method="post">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="voce@email.com" required>
 
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Sua senha" required>
+
+        <div class="form-row">
+          <label class="check-label"><input type="checkbox" name="lembrar"> Lembrar de mim</label>
+          <a href="recuperar-senha.html">Esqueci minha senha</a>
+        </div>
+
+        <!-- O envio real exige um backend para validar as credenciais. -->
+        <button class="btn btn-primary" type="button" onclick="window.location.href='eventos.html'">Entrar
+          (demonstração)</button>
+      </form>
+      <p class="muted center">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
     </main>
-
+  </main>
 </body>
 
 </html>

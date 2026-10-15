@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeatLock | Confirmar reserva</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="subbar">
+    <a class="btn btn-outline" href="assentos.html">← Voltar para o mapa</a>
+    <strong>Confirmação da Reserva</strong>
+  </header>
+
+  <main class="confirm-card">
+    <h1>Tech Summit 2026</h1>
+    <div class="accent-line"></div>
+    <!-- Estes valores deverão ser preenchidos com a reserva mantida no servidor. -->
+    <div class="summary-line"><span>Data</span><strong>14 de Novembro, 2026</strong></div>
+    <div class="summary-line"><span>Hora</span><strong>19:00</strong></div>
+    <div class="summary-line"><span>Local</span><strong>Centro de Convenções — SP</strong></div>
+    <div class="summary-line"><span>Assentos</span><strong>C3, C4</strong></div>
+    <div class="summary-line"><span>Quantidade</span><strong>2 ingressos</strong></div>
+    <div class="summary-line total-row"><span>Total</span><strong>R$ 160,00</strong></div>
+
+    <label class="check-label terms"><input type="checkbox" required> Li e concordo com os termos de cancelamento e as condições de uso do SeatLock.</label>
+    <!-- Link de demonstração; em produção, confirmar deve executar POST no backend. -->
+    <a class="btn btn-primary" href="sucesso.html">Confirmar e reservar (demonstração)</a>
+    <a class="center text-link" href="assentos.html">Voltar para o mapa</a>
+  </main>
+</body>
+</html>

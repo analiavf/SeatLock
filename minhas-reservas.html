@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeatLock | Minhas reservas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="eventos.html"><span class="brand-icon">🔒</span> SeatLock</a>
+    <input class="search" type="search" placeholder="🔎 Buscar eventos, locais..." aria-label="Buscar eventos">
+    <div class="user-chip"><span class="avatar">A</span> Ana Souza</div>
+  </header>
+
+  <div class="reservations-layout">
+    <aside class="side-menu">
+      <a class="side-active" href="minhas-reservas.html">Reservas Ativas</a>
+      <a href="#historico">Histórico de Eventos</a>
+      <a href="eventos.html">Explorar eventos</a>
+    </aside>
+
+    <main class="reservations-main">
+      <h1>Reservas Ativas</h1>
+      <!-- Exemplo estático de uma reserva. A API deve retornar apenas reservas do usuário autenticado. -->
+      <article class="reservation-card">
+        <div class="thumb">IMG</div>
+        <div class="reservation-details">
+          <h2>Tech Summit 2026</h2>
+          <p>Código: SL-892A1</p>
+          <p>14 Nov 2026 · 19:00 · Centro de Convenções — SP</p>
+          <p>Assentos: C3, C4</p>
+        </div>
+        <span class="status">ATIVO</span>
+        <div class="reservation-actions">
+          <button class="btn btn-outline" type="button" onclick="alert('A geração de QR Code deve ser implementada no backend.')">Visualizar QR Code</button>
+          <button class="btn btn-outline" type="button" onclick="alert('O cancelamento real deve atualizar a reserva no banco de dados.')">Cancelar reserva</button>
+        </div>
+      </article>
+
+      <article class="reservation-card" id="historico">
+        <div class="thumb">IMG</div>
+        <div class="reservation-details">
+          <h2>Festival de Jazz — Noite Aberta</h2>
+          <p>Código: SL-771B4</p>
+          <p>02 Dez 2026 · 20:30 · Arena Central</p>
+          <p>Assentos: D8</p>
+        </div>
+        <span class="status">ATIVO</span>
+        <div class="reservation-actions">
+          <button class="btn btn-outline" type="button" onclick="alert('A geração de QR Code deve ser implementada no backend.')">Visualizar QR Code</button>
+          <button class="btn btn-outline" type="button" onclick="alert('O cancelamento real deve atualizar a reserva no banco de dados.')">Cancelar reserva</button>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

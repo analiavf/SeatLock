@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Eventos no SeatLock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho compartilhado das páginas internas. -->
+  <header class="topbar">
+    <a class="brand" href="eventos.html"><span class="brand-icon"><img src="img/seatlock-logo-icon.svg" alt=""></span> SeatLock</a>
+    <input class="search" type="search" placeholder="Buscar evento..." aria-label="Buscar eventos">
+    <div class="user-chip"><span class="avatar">IN</span> Isaías Neto</div>
+  </header>
+
+  <main class="page-wrap">
+    <!-- Filtros visuais; para filtrar dados reais, será necessário JavaScript/backend. -->
+    <nav class="filters" aria-label="Categorias de eventos">
+      <a class="filter active" href="eventos.html">Todos</a>
+      <a class="filter" href="#shows">Shows</a>
+      <a class="filter" href="#teatros">Teatros</a>
+      <a class="filter" href="#palestras">Palestras</a>
+      <a class="filter" href="#festivais">Festivais</a>
+    </nav>
+
+    <!-- Os cartões abaixo são exemplos estáticos. Substitua por dados vindos da API. -->
+    <section class="event-grid" aria-label="Lista de eventos">
+      <article class="event-card" id="palestras">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Palestras</span><h2>Tech Summit 2026</h2>
+          <p>14 Nov · 19:00</p><p>Centro de Convenções — SP</p>
+          <div class="progress"><span style="width:72%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card" id="shows">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Shows</span><h2>Noite de Jazz</h2>
+          <p>02 Dez · 20:30</p><p>Arena Central</p>
+          <div class="progress"><span style="width:45%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card" id="teatros">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Teatros</span><h2>Hamlet — Nova Montagem</h2>
+          <p>20 Nov · 18:00</p><p>Teatro Municipal</p>
+          <div class="progress"><span style="width:88%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card" id="festivais">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Festivais</span><h2>Festival Verão Som</h2>
+          <p>09 Jan · 16:00</p><p>Parque da Cidade</p>
+          <div class="progress"><span style="width:60%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Palestras</span><h2>UX Conf 2026</h2>
+          <p>28 Nov · 09:00</p><p>Hub de Inovação</p>
+          <div class="progress"><span style="width:30%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Shows</span><h2>Rock in Concert</h2>
+          <p>05 Dez · 21:00</p><p>Estádio Sul</p>
+          <div class="progress"><span style="width:95%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Teatros</span><h2>O Auto da Compadecida</h2>
+          <p>22 Nov · 20:00</p><p>Teatro Central</p>
+          <div class="progress"><span style="width:50%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-image">IMAGEM 16:9</div>
+        <div class="event-info">
+          <span class="tag">Festivais</span><h2>Festival Gastronômico</h2>
+          <p>15 Dez · 12:00</p><p>Praça das Artes</p>
+          <div class="progress"><span style="width:20%"></span></div>
+          <a class="btn btn-primary" href="assentos.html">Ver assentos</a>
+        </div>
+      </article>
+    </section>
+    <p class="notice">Conteúdo demonstrativo: eventos, datas e disponibilidade ainda não vêm do banco de dados.</p>
+    <a class="text-link" href="minhas-reservas.html">Ver minhas reservas →</a>
+  </main>
+</body>
+</html>

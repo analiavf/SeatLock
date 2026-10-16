@@ -313,6 +313,11 @@ input:focus {
   border-color: var(--butter);
 }
 
+.search::placeholder {
+  color: var(--goldfinch);
+  border: 2px;
+}
+
 /*  */
 .user-chip {
   display: flex;
@@ -333,8 +338,9 @@ input:focus {
   font-weight: 800;
 }
 
+/* AJUSTA A PARTE DE DISTANCIA DOS FILROS DO TOPO DA PAGINA */
 .page-wrap {
-  padding: 300px 4.5% 40px;
+  padding: 500px 4.5% 40px;
 }
 
 .filters {
@@ -368,10 +374,10 @@ input:focus {
 
 .event-card {
   overflow: hidden;
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: var(--bistre);
+  border: 1px solid var(--indian-red);
   border-radius: 16px;
-  box-shadow: 0 12px 24px #0002;
+  box-shadow: 0 12px 24px var(--indian-red);
 }
 
 .event-image,
@@ -396,35 +402,41 @@ input:focus {
 .tag {
   display: inline-block;
   padding: 4px 9px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--goldfinch);
   border-radius: 30px;
-  color: var(--muted);
+  color: var(--goldfinch);
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
+/* nome do evento */
 .event-info h2 {
   margin: 12px 0 8px;
+  color: var(--goldfinch);
+  font-size: 20px;
 }
 
+/* descricao do evento */
 .event-info p {
   margin: 3px 0;
   font-size: 12px;
+  color: var(--butter);
 }
 
+/* barra de progresso */
 .progress {
   height: 5px;
   margin: 14px 0;
   overflow: hidden;
-  background: #303340;
+  background: var(--garnet);
   border-radius: 10px;
 }
 
 .progress span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--cyan), var(--yellow));
+  background: linear-gradient(90deg, var(--indian-red), var(--butter));
   border-radius: inherit;
 }
 
@@ -432,9 +444,11 @@ input:focus {
   width: 100%;
 }
 
+/* aviso rodapé */
 .notice {
   margin-top: 22px;
   font-size: 12px;
+  color: var(--indian-red);
 }
 
 
@@ -782,6 +796,7 @@ input:focus {
    ========================================================= */
 /* Minhas reservas */
 .reservations-layout {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 235px minmax(0, 1fr);
   min-height: calc(100vh - 72px);
@@ -789,8 +804,8 @@ input:focus {
 
 .side-menu {
   padding: 28px 0;
-  background: var(--panel);
-  border-right: 1px solid var(--border);
+  background: var(--bistre);
+  border-right: 1px solid var(--bistre);
 }
 
 .side-menu a {
@@ -800,9 +815,9 @@ input:focus {
 }
 
 .side-menu .side-active {
-  color: var(--text);
-  background: var(--panel-2);
-  border-left-color: var(--yellow);
+  color: var(--butter);
+  background: var(--indian-red);
+  border-left-color: var(--goldfinch);
   font-weight: 800;
 }
 
@@ -812,6 +827,7 @@ input:focus {
 
 .reservations-main h1 {
   font-size: 20px;
+  color: var(--goldfinch);
 }
 
 .reservation-card {
@@ -820,8 +836,8 @@ input:focus {
   gap: 22px;
   margin-bottom: 18px;
   padding: 20px;
-  background: var(--panel);
-  border: 1px solid var(--border);
+  background: var(--bistre);
+  border: 1px solid var(--bistre);
   border-radius: 16px;
 }
 
@@ -838,18 +854,21 @@ input:focus {
 
 .reservation-details h2 {
   margin-bottom: 6px;
+  font-size: 20px;
+  color: var(--goldfinch);
 }
 
 .reservation-details p {
   margin: 3px 0;
   font-size: 12px;
+  color: var(--butter);
 }
 
 .status {
   padding: 5px 10px;
-  color: var(--cyan);
-  background: #4bd5c81a;
-  border: 1px solid #286e69;
+  color: var(--butter);
+  background: var(--indian-red);
+  border: 1px solid var(--indian-red);
   border-radius: 20px;
   font-size: 10px;
   font-weight: 800;
@@ -865,6 +884,7 @@ input:focus {
   min-height: 36px;
   padding: 8px 10px;
   font-size: 12px;
+  color: var(--butter);
 }
 
 
